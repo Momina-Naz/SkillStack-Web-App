@@ -9,9 +9,9 @@ export default function Navbar(){
                 <h1>SkillStack</h1>
             </div>
             </Link>
-            <ul className="flex flex-row gap-5 p-1">
+            <ul className="flex flex-row gap-5 p-1 mr-1">
                 <Link to="/skills">Skills</Link>
-                <Link to="/addskill">Add Skill</Link>
+                <Link to="/addskill">AddSkill</Link>
                 <Link to="/about">About</Link>
             </ul>
         </div>

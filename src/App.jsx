@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import About from './Pages/About';
 import AddSkill from './Pages/AddSkill';
-import EditSkill from './Pages/EditSkill';
 import Home from './Pages/Home';
 import NotFound from './Pages/NotFound';
 import SkillDetail from './Pages/SkillDetail';
@@ -49,10 +48,10 @@ export default function App() {
         <Navbar />
         <div className="h-full w-full flex flex-col items-center bg-gray-100">
           <Routes>
+             <Route path="/" element={<Home/>} />
             <Route path="/" element={<Home />} />
             <Route path="/skills" element={<Skills skills={skills} deleteSkill={deleteSkill} />} />
             <Route path="/addskill" element={<AddSkill onAddSkill={addSkill} />} />
-            <Route path="/editskill" element={<EditSkill />} />
             <Route path="/skilldetail/:id" element={<SkillDetail />} />
             <Route path="/about" element={<About />} />
             <Route path="*" element={<NotFound />} />
