@@ -57,7 +57,7 @@ export default function SkillDetail() {
       <p className="text-sm text-gray-700">{skill.progress || 0}% Complete</p>
 
       <h3 className="mt-6 mb-2 font-semibold text-gray-700">Core Topics:</h3>
-      <ul className="space-y-2 max-h-52 overflow-y-auto pr-1 mb-3">
+      <ul className="space-y-2 max-h-32 overflow-y-auto pr-1 mb-3">
         {skill.topics?.map((topic, index) => (
           <li
             key={index}
