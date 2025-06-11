@@ -5,7 +5,7 @@ export default function Navbar(){
         <div className="flex flex-row items-center gap-35 font-medium text-lg w-ful text-gray-50	bg-blue-500">
             <Link to="/">
             <div className="flex flex-row  items-center">
-                <img  className="h-13 " src="public\fav icon2.png" alt="logo" />
+                <img  className="h-13 " src="/fav icon2.png" alt="logo" />
                 <h1>SkillStack</h1>
             </div>
             </Link>
