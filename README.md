@@ -8,7 +8,7 @@ A simple and responsive React app to help you track your skills, core topics, an
 -  Add new skills with level, category, and core topics
 -  Track topic completion and overall skill progress
 -  View skills in a card-based layout with progress bars
--  Edit or delete skills
+-  Delete skills
 -  View detailed topic checklist for each skill
 -  Client-side routing using React Router
 
